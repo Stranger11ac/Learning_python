@@ -72,7 +72,12 @@ type(edad)
 
 **Comparación**:
 
-== != > < >= <=
+- \==
+- \!=
+- \>
+- \<
+- \>=
+- \<=
 
 **Lógicos**:
 
@@ -107,7 +112,7 @@ Tema clave: indentación
 
 ## 7) Ciclos (loops)
 
-### Ciclowhile
+### Ciclo while
 
 ```python
 i = 0
@@ -290,3 +295,24 @@ Conceptos clave:
 - self = referencia al objeto actual
 - atributos
 - métodos
+
+## Tabla de Métodos y funciones
+
+| Nombre                | Tipo               | ¿Qué hace?                                                                | Ejemplo rápido                                   |
+| --------------------- | ------------------ | ------------------------------------------------------------------------- | ------------------------------------------------ |
+| `len(obj)`            | Función (built-in) | Devuelve la cantidad de elementos de un objeto (texto, lista, dict, etc.) | `len("Hola") → 4`                                |
+| `.upper()`            | Método de `str`    | Convierte el texto a MAYÚSCULAS                                           | `"hola".upper() → "HOLA"`                        |
+| `.lower()`            | Método de `str`    | Convierte el texto a minúsculas                                           | `"HOLA".lower() → "hola"`                        |
+| `.strip()`            | Método de `str`    | Quita espacios (o caracteres) al inicio y final                           | `"  hola  ".strip() → "hola"`                    |
+| `.append(x)`          | Método de `list`   | Agrega un elemento al final de la lista                                   | `nums=[1,2]; nums.append(3)`                     |
+| `.pop()`              | Método de `list`   | Elimina y devuelve el último elemento (o el de un índice)                 | `nums=[1,2,3]; nums.pop() → 3`                   |
+| `.remove(x)`          | Método de `list`   | Elimina la primera aparición de un valor específico                       | `[1,2,2].remove(2) → [1,2]`                      |
+| `.keys()`             | Método de `dict`   | Devuelve las claves del diccionario                                       | `{"a":1}.keys() → dict_keys(["a"])`              |
+| `.values()`           | Método de `dict`   | Devuelve los valores del diccionario                                      | `{"a":1}.values() → dict_values([1])`            |
+| `.items()`            | Método de `dict`   | Devuelve pares `(clave, valor)` del diccionario                           | `{"a":1}.items() → dict_items([("a",1)])`        |
+| `sum(iterable)`       | Función (built-in) | Suma los elementos de una lista/colección numérica                        | `sum([1,2,3]) → 6`                               |
+| `min(iterable)`       | Función (built-in) | Devuelve el valor más pequeño                                             | `min([4,1,9]) → 1`                               |
+| `max(iterable)`       | Función (built-in) | Devuelve el valor más grande                                              | `max([4,1,9]) → 9`                               |
+| `sorted(iterable)`    | Función (built-in) | Ordena una colección y devuelve una nueva lista                           | `sorted([3,1,2]) → [1,2,3]`                      |
+| `enumerate(iterable)` | Función (built-in) | Devuelve pares `(índice, valor)` al recorrer un iterable                  | `for i,v in enumerate(["a","b"]): ...`           |
+| `zip(a, b, ...)`      | Función (built-in) | Une listas/iterables en tuplas por posición                               | `list(zip([1,2],["a","b"])) → [(1,"a"),(2,"b")]` |
