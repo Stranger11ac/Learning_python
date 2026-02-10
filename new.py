@@ -55,15 +55,17 @@ while i < 5:
 
 print()
 
-for numeroEnElRango in range(100):
+for numeroEnElRango in range(2):
     print(numeroEnElRango) # 0 - 99
 
-numbers = [0, 1, 2, 3, 4, 4, 5,1, 2,2,2,2,2,2,2,2,2,2,2,2]
-
-for item in numbers:
-    print(item)
 
 alumnos = ["Ana", "Luis", "Carlos"]
 
 for item in alumnos:
     print("Hola", item)
+
+listObjects = ["texto", 12, 123.78, True]
+print(listObjects)
+listObjects.append("Otra cosa")
+listObjects[0] = "Este texto"
+print(listObjects)
