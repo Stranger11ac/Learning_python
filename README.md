@@ -1,4 +1,4 @@
-# 🐍 Guía para enseñar Python a principiantes
+# 🐍 Guía de Python para principiantes
 
 ## Introducción rápida (antes de programar)
 
